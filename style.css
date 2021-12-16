@@ -71,3 +71,125 @@ img {
 .clear {
   clear: both;
 }
+
+/* MEDIA QUERY < 420px */
+@media only screen and (max-width: 419px) {
+  /* GENERALI */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* COMUNI */
+  .row {
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  /* LEZIONI */
+  #lezioni.container {
+    background-color: rgb(243, 242, 205);
+  }
+
+  #lezioni .row > .left,
+  #lezioni .row > .right {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* STEPS */
+  #steps.container {
+    background-color: #fff;
+  }
+
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* WHY */
+  #why.container {
+    background-color: rgb(243, 242, 205);
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 20px;
+  }
+}
+
+
+/* MEDIA QUERY TABLET */
+@media only screen and (max-width: 767px) and (min-width: 420px) {
+  /* GENERALI */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* COMUNI */
+  .row {
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  /* LEZIONI */
+  #lezioni.container {
+    background-color: #fff;
+  }
+
+  #lezioni .row > .left,
+  #lezioni .row > .right {
+    margin-top: 20px;
+    width: calc(95% / 2);
+  }
+
+  #lezioni .row > .left {
+    margin-right: 5%;
+  }
+
+  /* STEPS */
+  #steps.container {
+    background-color: rgb(160, 205, 235);
+  }
+
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    margin-top: 20px;
+    width: calc(90% / 3);
+  }
+
+  #steps .row > .central {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /* WHY */
+  #why.container {
+    background-color: #fff;
+  }
+
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    margin-top: 20px;
+  }
+}
